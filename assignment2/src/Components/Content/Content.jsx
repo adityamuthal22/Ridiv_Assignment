@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "../../Context/ThemeContext";
 import styles from "./Content.module.css";
-import axios from "axios";
 
 function Content() {
   const { theme } = useTheme();
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/photos?_limit=50")
+    fetch("https://jsonplaceholder.typicode.com/photos?_limit=50")
       .then((response) => {
-        setPhotos(response.data);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setPhotos(data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
