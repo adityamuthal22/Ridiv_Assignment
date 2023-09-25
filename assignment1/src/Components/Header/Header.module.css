@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 100px;
+  border-bottom: 2px solid;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.button {
+  display: flex;
+  height: 30px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.headerLink{
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    color: aqua;
+}
+.headerLink Link{
+  text-decoration: none;
+  color: aqua;
+}

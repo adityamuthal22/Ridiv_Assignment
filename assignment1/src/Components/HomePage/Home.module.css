@@ -1,0 +1,30 @@
+.photo_list {
+    text-align: center;
+  }
+  
+  .grid_container {
+    width: 90%;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .grid_item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.Image{
+    width: 200px;
+    height: 200px;
+}
+  
+  .title {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }

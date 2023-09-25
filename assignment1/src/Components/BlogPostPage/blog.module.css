@@ -1,0 +1,50 @@
+.Blogbox1 {
+  width: 50%;
+  margin: auto;
+}
+
+.mainBox {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Image {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.button{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: teal;
+    border-radius: 10px;
+}
+
+.button:hover{
+    text-decoration: underline;
+}
+
+.name{
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.blogDetails{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: teal;
+}
